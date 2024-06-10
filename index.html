@@ -1,47 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jam</title>
+    <title>John Emerson | Linktree</title>
+    <!-- Favicon -->
+    <link rel="icon" href="https://avatars0.githubusercontent.com/u/43749971" type="image/x-icon" />
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Core theme CSS -->
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class ="container">
+  </head>
 
-        <!--Analog Clock-->
-        <div class ="clock">
-        
-          <div class="circle" id="sc" style="--clr:#04fc43;"><i></i></div>
-          <div class="circle circle2" id="mn" style="--clr:#fee800;"><i></i></div>
-          <div class="circle circle3" id="hr" style="--clr:#ff2972;"><i></i></div>
-        
-          <span style = "--i:1;"><b>1</b></span>
-          <span style = "--i:2;"><b>2</b></span>
-          <span style = "--i:3;"><b>3</b></span>
-          <span style = "--i:4;"><b>4</b></span>
-          <span style = "--i:5;"><b>5</b></span>
-          <span style = "--i:6;"><b>6</b></span>
-          <span style = "--i:7;"><b>7</b></span>
-          <span style = "--i:8;"><b>8</b></span>
-          <span style = "--i:9;"><b>9</b></span>
-          <span style = "--i:10;"><b>10</b></span>
-          <span style = "--i:11;"><b>11</b></span>
-          <span style = "--i:12;"><b>12</b></span>
-        
+  <body>
+    <!-- Parallax Pixel Background Animation -->
+    <section class="animated-background">
+      <div id="stars1"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </section>
+    <!-- End of Parallax Pixel Background Animation -->
+
+    <a id="profilePicture" href="#popup">
+      <img src="https://avatars0.githubusercontent.com/u/43749971" alt="Profile Picture">
+    </a>
+
+    <div class="overlay" id="popup">
+      <div class="popup">
+        <div class="popup-photo">
+          <a href="https://avatars0.githubusercontent.com/u/43749971" target="_blank">
+            <img src="https://avatars0.githubusercontent.com/u/43749971" alt="Profile Picture">
+          </a>
         </div>
-        
-        <!--digital clock-->
-        <div  id = "time">
-        
-          <div id = "hours" style="--clr:#ff2972;">00</div>
-          <div id = "minutes" style="--clr:#fee800;">00</div>
-          <div id = "seconds" style="--clr:#04fc43;">00</div>
-          <div id = "ampm">AM</div>
-        
+        <div class="popup-quote">
+          But... the sensation that I've lost something lingers for a longtime after I wake up.
         </div>
-        
-          </div>
-          <script src="script.js"></script>
-</body>
+        <a class="popup-close" onclick="history.back()">&times;</a>
+      </div>
+    </div>
+
+    <div id="userName">
+      @johnggli
+    </div>
+
+    <div id="links">
+      <a class="link" href="https://github.com/johnggli" target="_blank">
+        <i class="fab fa-github">&nbsp;</i>Github
+      </a>
+      <a class="link" href="https://www.linkedin.com/in/johnggli" target="_blank">
+        <i class="fab fa-linkedin">&nbsp;</i>Linkedin
+      </a>
+      <a class="link" href="https://www.facebook.com/johnggli" target="_blank">
+        <i class="fab fa-facebook">&nbsp;</i>Facebook
+      </a>
+      <a class="link" href="https://www.instagram.com/johnggli" target="_blank">
+        <i class="fab fa-instagram">&nbsp;</i>Instagram
+      </a>
+      <a class="link" href="https://twitter.com/johnggli" target="_blank">
+        <i class="fab fa-twitter">&nbsp;</i>Twitter
+      </a>
+      <a class="link" href="https://myanimelist.net/profile/johnggli" target="_blank">
+        <i class="fa fa-play-circle">&nbsp;</i>MyAnimeList
+      </a>
+    </div>
+
+    <div id="hashtag">
+      #BeHappy❤
+    </div>
+  </body>
 </html>
